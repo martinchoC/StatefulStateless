@@ -14,14 +14,17 @@ class _CounterPageState extends State<CounterPage> {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Text('$counter',
-        style: const TextStyle(fontSize: 40),),
+        child: Text(
+          '$counter',
+          style: const TextStyle(fontSize: 40),
+        ),
       ),
-      floatingActionButton: FloatingActionButton(onPressed: (){
-        counter++;
-        setState(() {});
-      }, 
-      backgroundColor: Colors.blue,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          counter++;
+          setState(() {});
+        },
+        backgroundColor: Colors.blue,
       ),
     );
   }
