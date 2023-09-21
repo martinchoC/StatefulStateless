@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:stateful_and_stateless/pages/counter/counter_page.dart';
+import 'package:stateful_and_stateless/pages/login/login_page.dart';
 import 'package:stateful_and_stateless/pages/timer/timer_page.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const LoginPage(),
     );
   }
 }
