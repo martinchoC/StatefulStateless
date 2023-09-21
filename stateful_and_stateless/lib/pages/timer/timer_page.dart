@@ -66,7 +66,6 @@ class _TimerViewState extends State<TimerView> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     print("initState");
     _timer = Timer.periodic(const Duration(seconds: 1), (_) {
@@ -80,7 +79,6 @@ class _TimerViewState extends State<TimerView> {
 
   @override
   void didUpdateWidget(covariant TimerView oldWidget) {
-    // TODO: implement didUpdateWidget
     super.didUpdateWidget(oldWidget);
     print("old: ${oldWidget.color}");
     print("current: ${widget.color}");
@@ -90,7 +88,6 @@ class _TimerViewState extends State<TimerView> {
   void dispose() {
     print("Timer dispose");
     _timer?.cancel();
-    // TODO: implement dispose
     super.dispose();
   }
 
